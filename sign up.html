@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerala Tourism</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style3.css">
+  
+</head>
+
+    
+<body background="PICTURES/kannur/farm.jpg">
+
+
+  
+
+<nav class="navbar navbar-inverse" style="background-color: darkblue;">
+ 
+  <div class="container-fluid">
+    <div class="navbar-header">
+      
+
+      <a class="navbar-brand" href="#" style="padding: 4px;margin:auto"> <img src="PICTURES/KASARGOD/LOGO.jpg" style="height:70%;width: 90%;" ></a>
+     </a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Districts <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="tvm.html">Thiruvananthapuram</a></li>
+                <li><a href="kollam.html">Kollam</a></li>
+                <li><a href="ALAPPUZHA.HTML">Alappuzha</a></li>
+                <li><a href="pathanamthitta.html">Pathanamthitta</a></li>
+                <li><a href="KOTTAYAM.html">Kottayam</a></li>
+                <li><a href="idukki.html">Idukki</a></li>
+                <li><a href="Ernakulam.html">Ernakulam</a></li>
+                <li><a href="Thrissur.html">Thrissur</a></li>
+                <li><a href="palakkad.html">Palakkad</a></li>
+                <li><a href="Malappuram.html">Malappuram</a></li>
+                <li><a href="kozhikode.html">Kozhikode</a></li>
+                <li><a href="wayanad.html">Wayanad</a></li>
+                <li><a href="kannur.html">Kannur</a></li>
+                <li><a href="kasargod.html">Kasargod</a></li>
+        </ul>
+      </li>
+      <li><a href="Explore.html">Explore</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="sign up.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+
+</nav>
+
+<form action="sign up.html" class="login" name="myform" onsubmit ="return validateForm()">
+ 
+  <h3>SIGN UP</h3>
+
+  <div class="login-cont">
+    <label>First Name</label><br>
+    <input type="text" required>
+</div>
+<!-- <br> -->
+
+<div class="login-cont">
+  <label>Last Name</label><br>
+  <input type="text" required>
+</div>
+<!-- <br> -->
+
+<div class="login-cont">
+<label>Mobile Number</label><br>
+
+<input type="text"  onblur="phonenumber(this);">
+</div>
+<!-- <br> -->
+
+  
+  <div class="login-cont">
+  <label>Email</label><br>
+  
+  <input type="text" onblur="validateEmail(this);">
+</div>
+
+<div class="login-cont">
+  <!-- <label>Password</label><br> -->
+  <!-- <input type="password"> -->
+  <label>Password </label>
+  <ul>
+    <li>Minimum 8 characters</li>
+    <li>At least one uppercase and lower case letter</li>
+       <li>At least One special character</li>
+    <li>At least one number</li>
+
+  </ul>
+    <!-- <input type="password"> -->
+   
+    <input type="password" placeholder="Type your password" name="PassEntry" id="PassEntry" class="form-control passwordInput"onblur="CheckPassword(document.myform.PassEntry)">     
+        <span id="StrengthDisp" class="badge displayBadge">Weak</span>
+
+</div>
+<!-- <br> -->
+
+<div class="login-cont">
+<label>Retype Password</label><br>
+<input type="password" name="password2" id="password2">
+</div>
+<!-- <br> -->
+
+<div>
+  <button id="login-button" type="submit">Submit</button>
+</div>
+
+
+
+</form>
+
+
+<script src="phoneno validation.js"></script>
+
+<script src="email validation.js"></script>
+<script src="check-password-4.js"></script>   
+<script src="confirmpswd.js"></script>
+
+</body>
+</html>
